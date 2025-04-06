@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #4A90E2;
-    --secondary-color: #F5A623;
-    --background-color: #F8F9FA;
-    --text-color: #333;
-    --border-radius: 12px;
+    --primary-color: #3f6249;
+    --secondary-color: #F3C677;
+    --background-color: #aae8bd;
+    --text-color: #2F2F2F;
+    --border-radius: 14px;
 }
 
 * {
@@ -12,6 +12,25 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
+.medimate-font {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: var(--primary-color);
+    padding: 4px 12px;
+  background-color: #F9FFE3; /* light yellow/green */
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  }
+  #tagline {
+    font-family: 'Times New Roman', Times, serif
+    font-weight:500;
+    font-size: 25px;
+    color: var(--primary-color);
+
+
+  }
+
 
 body {
     background-color: var(--background-color);
@@ -29,7 +48,7 @@ header {
     text-align: center;
     margin-bottom: 40px;
     padding: 20px;
-    background: white;
+    background: #ECF2CE;
     border-radius: var(--border-radius);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -41,8 +60,8 @@ header h1 {
 }
 
 .section {
-    background: white;
-    padding: 20px;
+    background: #ECF2CE;
+    padding: 32px;
     border-radius: var(--border-radius);
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -100,7 +119,7 @@ h2 {
 .reminder-card button {
     width: auto;
     padding: 8px 15px;
-    background-color: #dc3545;
+    background-color: #F28B82;
 }
 
 @media (max-width: 600px) {
