@@ -27,11 +27,7 @@
     font-weight:500;
     font-size: 25px;
     color: var(--primary-color);
-
-
-  }
-
-
+ }
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -94,12 +90,29 @@ button:hover {
 
 .medicine-input, .scan-section {
     margin-bottom: 30px;
+    background-color: #f9ffe3;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 h2 {
     color: var(--primary-color);
     margin-bottom: 15px;
+    font-size: 1.5em;
 }
+.medicine-input h2::after {
+    content: ' 💊';
+}
+
+.scan-section h2::after {
+    content: ' 🧾';
+}
+
+#reminders-list h2::after {
+    content: ' ⏰';
+}
+
 
 #reminders-container {
     display: grid;
@@ -114,12 +127,21 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1rem;
 }
 
 .reminder-card button {
     width: auto;
     padding: 8px 15px;
     background-color: #F28B82;
+    border: none;
+    border-radius: var(--border-radius);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.reminder-card button:hover {
+    background-color: #e6675e;
 }
 
 @media (max-width: 600px) {

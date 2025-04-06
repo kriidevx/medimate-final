@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet" />
 
-</head>
-<body>
   <div class="container">
     <header>
       <h1><span class="medimate-font"> MediMate🏥</span>  </h1>
@@ -33,9 +31,9 @@
       </div>
     </div>
 
-    <div id="app-section" class="section hidden">
+    <div id="app-section" class="section ">
       <div class="medicine-input">
-        <h2>📝 Add Medicine Reminder</h2>
+        <h2> Add Medicine Reminder</h2>
         <div class="input-group">
           <input type="text" id="medicine-name" placeholder="Medicine Name" />
           <input type="time" id="medicine-time" />
@@ -44,13 +42,13 @@
       </div>
 
       <div class="scan-section">
-        <h2>📸 Scan Prescription</h2>
+        <h2> Scan Prescription</h2>
         <input type="file" id="prescription-upload" accept="image/*" capture="environment" />
         <button onclick="scanPrescription()">Scan</button>
       </div>
 
       <div id="reminders-list">
-        <h2>⏰ Your Reminders</h2>
+        <h2> Your Reminders</h2>
         <div id="reminders-container"></div>
       </div>
     </div>
