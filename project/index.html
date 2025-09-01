@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MediMate - Your Medicine Reminder</title>
   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet" />
+
   <div class="container">
     <header>
-      <h1>🏥 MediMate</h1>
-      <p>Your friendly medicine reminder</p>
+      <h1><span class="medimate-font"> MediMate🏥</span>  </h1>
+      <h1 id="tagline">your medicine reminder </h1>
+
+    
     </header>
 
     <div id="auth-section" class="section">
-      <h2>👋 Welcome!</h2>
+      <h2> Welcome to Medimate!! 😊💗 </h2>
       <form id="login-form">
         <input type="email" id="email" placeholder="Email" required />
         <input type="password" id="password" placeholder="Password" required />
@@ -29,9 +31,9 @@
       </div>
     </div>
 
-    <div id="app-section" class="section hidden">
+    <div id="app-section" class="section ">
       <div class="medicine-input">
-        <h2>📝 Add Medicine Reminder</h2>
+        <h2> Add Medicine Reminder</h2>
         <div class="input-group">
           <input type="text" id="medicine-name" placeholder="Medicine Name" />
           <input type="time" id="medicine-time" />
@@ -40,13 +42,13 @@
       </div>
 
       <div class="scan-section">
-        <h2>📸 Scan Prescription</h2>
+        <h2> Scan Prescription</h2>
         <input type="file" id="prescription-upload" accept="image/*" capture="environment" />
         <button onclick="scanPrescription()">Scan</button>
       </div>
 
       <div id="reminders-list">
-        <h2>⏰ Your Reminders</h2>
+        <h2> Your Reminders</h2>
         <div id="reminders-container"></div>
       </div>
     </div>
